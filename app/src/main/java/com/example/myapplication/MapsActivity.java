@@ -240,7 +240,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
         // Αρχικοποίηση του Places API client χρησιμοποιώντας το API key
-        Places.initialize(getApplicationContext(), "AIzaSyAFZX8wgZE3ufsj2A2dc4-NHU6CdJ2P4wY"); // API key
+        Places.initialize(getApplicationContext(), ""); // API key
         placesClient = Places.createClient(this);
 
         // Αρχικοποίηση του Firebase
