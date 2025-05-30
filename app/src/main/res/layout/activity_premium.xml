@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/athen_map2"
+        android:alpha="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One Last Step..."
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="200dp" />
+
+    <Button
+        android:id="@+id/premiumUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Premium User"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:backgroundTint="@null"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/officialUserButton"/>
+
+    <Button
+        android:id="@+id/officialUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard User"
+        app:backgroundTint="@null"
+        android:background="@drawable/button_style"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        app:layout_constraintStart_toEndOf="@+id/premiumUserButton"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/whatIsPremiumUserLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is a premium user?"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/premiumUserButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+    <TextView
+        android:id="@+id/premiumUserDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="As a Premium User \n- Make unlimited incident reports \n- Search unlimited destinations for the safest and fastest routes\n- Get priority access to algorithm suggestions\nAs a Regular User:\n- Make one incident report per day\n- Search up to 3 destinations for route suggestions"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:minHeight="48dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/whatIsPremiumUserLink"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/chat_bubble"
+        android:padding="8dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

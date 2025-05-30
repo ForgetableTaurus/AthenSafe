@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/athen_map2">
+
+    <!-- Logo -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logoo"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/RoundedImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.3"
+        android:layout_marginTop="150dp"/>
+
+    <!-- Κουμπί Sign In -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        android:background="@drawable/button_style"
+        app:rippleColor="@android:color/transparent"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="50dp" />
+
+    <!-- Κουμπί Create New Account -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        android:background="@drawable/button_style"
+        app:rippleColor="@android:color/transparent"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/signInButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="30dp" />
+
+    <!-- Πράσινο πλαίσιο -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/bottomImage"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:src="@drawable/plain_green"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/RoundedImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Chatbot Icon -->
+    <ImageView
+        android:id="@+id/chatbot"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/support_agent"
+        app:tint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/bottomImage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="-230dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintHorizontal_bias="0.1" />
+
+    <!-- Chatbot Text -->
+    <TextView
+        android:id="@+id/chatbotText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ask. Learn. Stay safe."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="@id/chatbot"
+        app:layout_constraintStart_toEndOf="@id/chatbot"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp" />
+
+    <!-- SOS Icon -->
+    <ImageView
+        android:id="@+id/sos"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/sos_icon"
+        app:tint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/chatbotText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintHorizontal_bias="0.1" />
+
+    <!-- SOS Text -->
+    <TextView
+        android:id="@+id/sosText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency? Hit the button."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="@id/sos"
+        app:layout_constraintStart_toEndOf="@id/sos"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp" />
+
+    <!-- Report Icon -->
+    <ImageView
+        android:id="@+id/report"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/report_icon"
+        app:tint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/sosText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintHorizontal_bias="0.1" />
+
+    <!-- Report Text -->
+    <TextView
+        android:id="@+id/reportText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help us build a safer city."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="@id/report"
+        app:layout_constraintStart_toEndOf="@id/report"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp" />
+
+    <!-- Find Route Icon -->
+    <ImageView
+        android:id="@+id/find_route"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/search_icon"
+        app:tint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/reportText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintHorizontal_bias="0.1" />
+
+    <!-- Find Route Text -->
+    <TextView
+        android:id="@+id/routeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find the safest way there."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="@id/find_route"
+        app:layout_constraintStart_toEndOf="@id/find_route"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

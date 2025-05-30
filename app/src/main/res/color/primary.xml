@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Όταν είναι πατημένο -->
+    <item android:state_pressed="true" android:color="@color/primary_dark" />
+    <!-- Όταν είναι εστιασμένο -->
+    <item android:state_focused="true" android:color="@color/primary_light" />
+    <!-- Κανονική κατάσταση -->
+    <item android:color="@color/primary" tools:ignore="ResourceCycle" />
+</selector>

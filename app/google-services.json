@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "766947009487",
+    "project_id": "athensafe",
+    "storage_bucket": "athensafe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766947009487:android:812b51bfe66b330bb2a8ba",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC48ol81q0o0E5wH5SOzu2lApFh-TStlmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

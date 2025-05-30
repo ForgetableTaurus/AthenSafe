@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <resources>
+        <color android:name="primary_dark_color" tools:ignore="ExtraText">#303F9F</color>
+        <color android:name="primary_light_color">#C5CAE9</color>
+    </resources>
+</selector>
